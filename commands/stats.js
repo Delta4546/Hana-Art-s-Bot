@@ -23,7 +23,7 @@ module.exports = {
             const l = Number.parseInt(s.loose);
             const embed = new Discord.RichEmbed().setTitle("Stats de "+msg.author.username)
             .setThumbnail(msg.author.avatarURL)
-            .addField(":star2: Partie(s) gagner : "+s.win, "Vos partie(s) que vous avez gagner !", false)
+            .addField(":star2: Partie(s) gagner : "+s.win, "Vos partie(s) que vous avez gagnée(s) !", false)
             .addField(":x: Partie(s) perdu: "+s.loose, "Vos partie(s) que vous avez perdu !", false)
             .addField(":muscle: Ratio: "+(w/l),"Votre ratio !", false).setColor("f1c40f");
             msg.channel.send(embed)
