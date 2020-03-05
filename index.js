@@ -41,4 +41,4 @@ bot.on('message', async msg => {
     }
 });
 
-bot.login([YOUR TOKEN]);
+bot.login(process.env.BOT_TOKEN);
